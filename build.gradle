@@ -34,7 +34,7 @@ ext {
 }
 
 jar {
-    archiveName = 'openpaas-cf-service-java-broker-mongodb.jar'
+    archiveName = 'ap-mongodb-broker.jar'
     
 }
 
@@ -61,7 +61,7 @@ configurations {
 
 dependencies {
     
-    compile files('libs/openpaas-service-java-broker.jar')
+    compile files('libs/ap-service-broker-1.0.0.1.jar')
     
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat:${springBootVersion}")
     compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
